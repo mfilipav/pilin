@@ -1,0 +1,61 @@
+<?xml version='1.0'?>
+<!-- ilmm input to solvate a protein system and prepare it for simulation by performing minimization and md of various parts of the system -->
+<workbook xmlns="http://inlucemmolecularmechanics/workbook" mmpl_uri="file://../ID3.xml">
+	<!-- Uncomment for an 8.0 Angstrom cutoff range -->
+	<!-- The default is 10.0 A, ascale 0.92 -->
+	<!--set name="cutoff_range" type="double" value="8.0"/-->
+	<!--set name="ascale" type="double" value="0.84"/-->
+
+	<!-- Uncomment to change the number of steps to reuse the non-bonded interaction pair lists -->
+	<!-- The default value is 2, other common options are 1, 3, or 5 -->
+	<!--set name="nonbonded_pairlist_steps" type="integer" value="1"/-->
+
+	<set name="mechanics" value="bond_pbadi angle_pbadi torsion_pbadi nonbonded_plus_pbadi" type="string"/>
+	<set name="pbadi_count" value="10" type="integer"/>
+
+	<!-- add 1 copy as chain A -->
+	<add count="1" molecule="ID3">
+		<chain id="A"/>
+	</add>
+
+	<!-- read the minimized PDB -->
+	<pdb_read filename="../min.pdb"/>
+
+	<!-- solvate the protein -->
+	<solvate water_pdb="/home1/02596/chengc2/ilmm/lib/h2o/310K.pdb" depth="10.0" density="0.993360" radius_of_exclusion="1.8"/>
+
+	<!-- minimize the water for 1000 steps -->
+	<go steps="1000">
+		<sdmin select="WAT"/>
+		<log granularity="100"/>
+	</go>
+	<reset/>
+
+	<!-- dynamics of the water 500 steps (1ps) -->
+	<go steps="500">
+		<dynamics select="WAT"/>
+		<thermostat temperature="310" heating_degrees="0.1" random_seed="1"/>
+		<log granularity="100"/>
+	</go>
+	<reset/>
+
+	<!-- minimize the water for 500 steps -->
+	<go steps="500">
+		<sdmin select="WAT"/>
+		<log granularity="100"/>
+	</go>
+	<reset/>
+
+	<!-- minimize the protein for 500 steps -->
+	<go steps="500">
+		<sdmin select="~WAT"/>
+		<log granularity="100"/>
+	</go>
+	<reset/>
+
+	<!-- save out a restart file and PDB -->
+	<pdb_write filename="start.pdb" write_solvent="true"/>
+	<mdr_write filename="start.mdr"/>
+
+</workbook>
+

@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<workbook xmlns="http://inlucemmolecularmechanics/workbook" mmpl_uri="file://../ID3.xml" threads="16" workbook_uri="file://prep.wkb_in.xml" workbook_log="prep.wkb_out.xml" version="20110520.65" host="login1.stampede.tacc.utexas.edu" date="Mon Feb 08 2016 @ 20:10:40" user="tg832040" compiler="icc" compiler_flags="-parallel -O2 -I./include  -DH3D_LOAD_BALANCE" compile_date="Fri Sep  6 11:26:56 2013">
+	
+	
+	
+	
+
+	
+	
+	
+
+	<copyright>*** in lucem Molecular Mechanics
+*** Author: David A. C. Beck, dacb@u.washington.edu
+***         University of Washington
+*** Copyright: Beck, Alonso, Daggett
+***          2000-2011, All rights reserved.
+*** NOTICE: Unauthorized use, duplication and / or distribution
+***         will be subject to criminal and civil penalties.
+</copyright><boot><mmpl uri="file://../ID3.xml" name="standard" version="2009.03.09" atoms="15" groups="36" residues="96" molecules="2" bonds="52" angles="136" torsions="90"><print TIME="1454983842"><![CDATA[molecular mechanics parameter library (standard v.2009.03.09) read from file source: 'file://../ID3.xml'
+	atoms          15	groups         36
+	residues       96	molecules       2
+	bonds          52	angles        136
+	torsions       90	total         427
+]]></print></mmpl><print TIME="1454983843"><![CDATA[setting variables to compile time defaults
+]]></print><set name="DEBUG" type="integer" value="1"><print TIME="1454983843"><![CDATA[	set variable var 'DEBUG' as type integer to 1
+]]></print></set><set name="library_path" type="string" value="/home1/02596/chengc2/ilmm/bin"><print TIME="1454983843"><![CDATA[	set variable var 'library_path' as type  string to /home1/02596/chengc2/ilmm/bin
+]]></print></set><set name="mechanics" type="string" value="bond angle torsion nonbonded_plus"><print TIME="1454983843"><![CDATA[	set variable var 'mechanics' as type  string to bond angle torsion nonbonded_plus
+]]></print></set><set name="cutoff_range" type="double" value="10"><print TIME="1454983843"><![CDATA[	set variable var 'cutoff_range' as type  double to 10
+]]></print></set><set name="ascale" type="double" value="0.92"><print TIME="1454983843"><![CDATA[	set variable var 'ascale' as type  double to 0.92
+]]></print></set><set name="bscale" type="double" value="1"><print TIME="1454983843"><![CDATA[	set variable var 'bscale' as type  double to 1
+]]></print></set><set name="cscale" type="double" value="1"><print TIME="1454983843"><![CDATA[	set variable var 'cscale' as type  double to 1
+]]></print></set><set name="cscale_1_3_charge_groups" type="double" value="0.4"><print TIME="1454983843"><![CDATA[	set variable var 'cscale_1_3_charge_groups' as type  double to 0.4
+]]></print></set><set name="nonbonded_pairlist_steps" type="integer" value="2"><print TIME="1454983843"><![CDATA[	set variable var 'nonbonded_pairlist_steps' as type integer to 2
+]]></print></set><set name="timestep" type="double" value="0.002"><print TIME="1454983843"><![CDATA[	set variable var 'timestep' as type  double to 0.002
+]]></print></set><set name="stepsize" type="double" value="0.01"><print TIME="1454983843"><![CDATA[	set variable var 'stepsize' as type  double to 0.01
+]]></print></set><set name="pbadi_count" type="integer" value="10"><print TIME="1454983843"><![CDATA[	set variable var 'pbadi_count' as type integer to 10
+]]></print></set><set name="pbadi_steps" type="integer" value="500"><print TIME="1454983843"><![CDATA[	set variable var 'pbadi_steps' as type integer to 500
+]]></print></set><set name="pdb_write_solvent_mols" type="string" value="WAT methanol ethanol urea tmao"><print TIME="1454983843"><![CDATA[	set variable var 'pdb_write_solvent_mols' as type  string to WAT methanol ethanol urea tmao
+]]></print></set><print TIME="1454983843"><![CDATA[starting thread 0...
+]]></print><print TIME="1454983843"><![CDATA[starting thread 1...
+]]></print><print TIME="1454983843"><![CDATA[starting thread 2...
+]]></print><print TIME="1454983843"><![CDATA[starting thread 3...
+]]></print><print TIME="1454983843"><![CDATA[starting thread 4...
+]]></print><print TIME="1454983843"><![CDATA[starting thread 5...
+]]></print><print TIME="1454983843"><![CDATA[starting thread 6...
+]]></print><print TIME="1454983843"><![CDATA[starting thread 7...
+]]></print><print TIME="1454983843"><![CDATA[starting thread 8...
+]]></print><print TIME="1454983843"><![CDATA[starting thread 9...
+]]></print><print TIME="1454983843"><![CDATA[starting thread 10...
+]]></print><print TIME="1454983843"><![CDATA[starting thread 11...
+]]></print><print TIME="1454983843"><![CDATA[starting thread 12...
+]]></print><print TIME="1454983843"><![CDATA[starting thread 13...
+]]></print><print TIME="1454983843"><![CDATA[starting thread 14...
+]]></print><print TIME="1454983843"><![CDATA[starting thread 15...
+]]></print></boot><set name="mechanics" value="bond_pbadi angle_pbadi torsion_pbadi nonbonded_plus_pbadi" type="string" author="dacb" version="2009.0" date="2009-01-22"><set name="mechanics" type="string" value="bond_pbadi angle_pbadi torsion_pbadi nonbonded_plus_pbadi"><print TIME="1454983843"><![CDATA[	set variable var 'mechanics' as type  string to bond_pbadi angle_pbadi torsion_pbadi nonbonded_plus_pbadi
+]]></print></set></set>
+	<set name="pbadi_count" value="10" type="integer" author="dacb" version="2009.0" date="2009-01-22"><set name="pbadi_count" type="integer" value="10"><print TIME="1454983843"><![CDATA[	set variable var 'pbadi_count' as type integer to 10
+]]></print></set></set>
+
+	
+	<add count="1" molecule="ID3" author="dacb" version="2009.0" date="2009-01-22">
+		<chain id="A"/>
+	<print TIME="1454983843"><![CDATA[	adding 1 ID3  to system using supplied chain assignments...
+]]></print></add>
+
+	
+	<pdb_read filename="../min.pdb" author="dacb" version="2009.0" date="2009-01-22"><file filename="../min.pdb" mode="r" size="43733"/><print TIME="1454983843"><![CDATA[	mapped 786 atoms
+]]></print><print TIME="1454983843"><![CDATA[	box dimensions set to ( 51.606000 , 32.956000 , 34.123000 )
+]]></print><print TIME="1454983843"><![CDATA[	system density is 0.161245
+]]></print><print TIME="1454983843"><![CDATA[	calculating global & local coordinates...
+]]></print></pdb_read>
+
+	
+	<solvate water_pdb="/home1/02596/chengc2/ilmm/lib/h2o/310K.pdb" depth="10.0" density="0.993360" radius_of_exclusion="1.8" author="dacb,mmccully" version="2009.1" date="2010-06-01"><file filename="/home1/02596/chengc2/ilmm/lib/h2o/310K.pdb" mode="r" size="49551"/><print TIME="1454983843"><![CDATA[	water box (21.70, 20.26, 20.08) in '/home1/02596/chengc2/ilmm/lib/h2o/310K.pdb'
+]]></print><print TIME="1454983843"><![CDATA[	found 879 atoms (293 waters) in '/home1/02596/chengc2/ilmm/lib/h2o/310K.pdb'
+]]></print><print TIME="1454983843"><![CDATA[	searching for minimal box w/ solvent depth of 10.000000 Angstroms
+]]></print><print TIME="1454983844"><![CDATA[	best rotation = { 130.00  65.00 140.00 }, min box V =  115425.1606
+]]></print><print TIME="1454983844"><![CDATA[	minimal box = {    42.60073603    42.31788435    64.02645220 }
+]]></print><print TIME="1454983844"><![CDATA[	using 1.8000 A as the radius of exclusion for waters around solute
+]]></print><print TIME="1454983844"><![CDATA[	unit cell is { 1.96 (2), 2.09 (3),  3.19 (4) } x water box dimensions
+]]></print><print TIME="1454983846"><![CDATA[	adding 3537 WATs to system...
+]]></print><print TIME="1454983846"><![CDATA[	box dimensions set to ( 42.600736 , 42.317884 , 64.026452 )
+]]></print><print TIME="1454983846"><![CDATA[	system density is 0.997896
+]]></print><print TIME="1454983846"><![CDATA[	adjusting density from 0.9979 to 0.9934
+]]></print><print TIME="1454983846"><![CDATA[	box dimensions set to ( 42.665476 , 42.382194 , 64.123752 )
+]]></print><print TIME="1454983846"><![CDATA[	system density is 0.993360
+]]></print><print TIME="1454983846"><![CDATA[	system density is 0.993360
+]]></print><print TIME="1454983846"><![CDATA[	calculating global & local coordinates...
+]]></print></solvate>
+
+	
+	<go steps="1000" hours="0" minutes="0">
+		<sdmin select="WAT" author="dacb" version="2009.0" date="2009-01-22"><init/><kernel/><thread id="0"/><thread id="1"/><thread id="2"/><thread id="3"/><thread id="4"/><thread id="5"/><thread id="6"/><thread id="7"/><thread id="8"/><thread id="9"/><thread id="10"/><thread id="11"/><thread id="12"/><thread id="13"/><thread id="14"/><thread id="15"/><dest/><variable name="nonbonded_pairlist_steps" type="integer" value="2"/><select statement="WAT" select="21546336"/><print TIME="1454983846"><![CDATA[	limited to atoms matching selection 'WAT' (10611 atoms found)
+]]></print><set name="mechanics_prune" type="string" value="WAT"><print TIME="1454983846"><![CDATA[	set variable var 'mechanics_prune' as type  string to WAT
+]]></print></set><print TIME="1454983846"><![CDATA[	calculating global & local coordinates...
+]]></print><mechanics><print TIME="1454983846"><![CDATA[	molecular mechanics system intializing:
+]]></print><variable name="mechanics" type="string" value="bond_pbadi angle_pbadi torsion_pbadi nonbonded_plus_pbadi"/><bond_pbadi bond_weight="1"><pbadi count="10" steps="500"/><variable name="pbadi_count" type="integer" value="10"/><variable name="pbadi_steps" type="integer" value="500"/><print TIME="1454983846"><![CDATA[		found 7074 bonds
+]]></print></bond_pbadi><angle_pbadi angle_weight="1"><pbadi count="10" steps="500"/><variable name="pbadi_count" type="integer" value="10"/><variable name="pbadi_steps" type="integer" value="500"/><print TIME="1454983847"><![CDATA[	angle
+		found 3537 angles
+]]></print></angle_pbadi><torsion_pbadi><print TIME="1454983847"><![CDATA[		found 0 torsions
+]]></print><pbadi count="10" steps="500"/><variable name="pbadi_count" type="integer" value="10"/><variable name="pbadi_steps" type="integer" value="500"/></torsion_pbadi><nonbonded_plus_pbadi cutoff_range="10" ascale="0.92" bscale="1" cscale="1" cscale_1_3_charge_groups="0.4" nonbonded_pairlist_steps="2" cutoff_buffer="2"><variable name="cutoff_range" type="double" value="10"/><variable name="ascale" type="double" value="0.92"/><variable name="bscale" type="double" value="1"/><variable name="cscale" type="double" value="1"/><variable name="cscale_1_3_charge_groups" type="double" value="0.4"/><variable name="nonbonded_pairlist_steps" type="integer" value="2"/><pbadi count="10" steps="500"/><variable name="pbadi_count" type="integer" value="10"/><variable name="pbadi_steps" type="integer" value="500"/><print TIME="1454983847"><![CDATA[	nonbonded plus
+		cutoff range	=  10.0000
+		vdw A scale	=   0.9200
+		vdw B scale	=   1.0000
+		els C scale	=   1.0000
+		els 1-3 charge group scale	=   0.4000
+]]></print><hash3d cutoff="10" load_balancing="yes"><print TIME="1454983847"><![CDATA[	creating new hash3d:
+]]></print><print TIME="1454983847"><![CDATA[	method	= charge group based 3d hashing function (lite/MAX version)
+]]></print><print TIME="1454983847"><![CDATA[	cutoff range	= 10.00
+]]></print><print TIME="1454983847"><![CDATA[	box dims	= (  42.66547553,  42.38219401,  64.12375193 )
+]]></print><print TIME="1454983847"><![CDATA[	bin dims	= (  10.66636888,  10.59554850,  10.68729199 )
+]]></print><print TIME="1454983847"><![CDATA[	bin volume	= 1207.83529959
+]]></print><print TIME="1454983847"><![CDATA[	box / bin	= (    6,    6,    8 )
+]]></print><print TIME="1454983847"><![CDATA[	allocating 288 bins (96 are local)
+]]></print><print TIME="1454983847"><![CDATA[	building neighbor hash arrays and initializing bin mutex sets
+]]></print><print TIME="1454983847"><![CDATA[	there are 14 neighbors for each spatial bin
+]]></print><print TIME="1454983847"><![CDATA[	max exclusion matrix dist = 26, chain distant exclusions = 10
+]]></print><print TIME="1454983847"><![CDATA[	there are 3862 atoms in hash3d
+]]></print><print TIME="1454983847"><![CDATA[	thread synchronization for load balancing is enabled
+]]></print></hash3d></nonbonded_plus_pbadi><variable name="mechanics_prune" type="string" value="WAT"/><print TIME="1454983846"><![CDATA[	pruning is enabled
+		only atoms in or interacting with those in the
+		selection statement 'WAT'
+		will be included in potential enery calculations
+]]></print><select statement="WAT" select="21604240"/><print TIME="1454983846"><![CDATA[	bond_pbadi   bonds with 'print bad interaction' (Levitt et al. force field)
+]]></print><print TIME="1454983847"><![CDATA[	angle_pbadi  angles with 'print bad interaction' (Levitt et al. force field)
+]]></print><print TIME="1454983847"><![CDATA[	torsion_pbadi torsions with 'print bad interaction' (Levitt et al. force field)
+]]></print><print TIME="1454983847"><![CDATA[	nonbonded_plus_pbadi nonbonded with 'print bad interaction', i.e. van der Waals & electrostatics (Levitt et al. force field)
+]]></print></mechanics></sdmin>
+		<log granularity="100" author="dacb" version="1.0" date="2009-01-14"><init/><kernel/><dest/><print TIME="1454983847"><![CDATA[	standard out logging every 100 steps
+]]></print><print TIME="1454983847" step="0"><![CDATA[#      step secs         e(kcal/mol)        ke(kcal/mol)      temperature(K)        pe(kcal/mol)   virial(kcal/molA)       pressure(atm)       density(g/ml)]]></print><print TIME="1454983847" step="0"><![CDATA[bond_pbadi(kcal/mol)]]></print><print TIME="1454983847" step="0"><![CDATA[angle_pbadi(kcal/mol)]]></print><print TIME="1454983847" step="0"><![CDATA[torsion_pbadi(kcal/mol)]]></print><print TIME="1454983847" step="0"><![CDATA[nonbonded_plus_pbadi(kcal/mol)]]></print><print TIME="1454983847" step="0"><![CDATA[
+]]></print><print TIME="1454983847" step="0"><![CDATA[.         0    0          0.00000000          0.00000000          0.00000000     399860.37572451   -1728736.63962262          0.00000000          0.99336000 ]]></print><print TIME="1454983847" step="0"><![CDATA[      5658.32610652 ]]></print><print TIME="1454983847" step="0"><![CDATA[      2014.56722817 ]]></print><print TIME="1454983847" step="0"><![CDATA[         0.00000000 ]]></print><print TIME="1454983847" step="0"><![CDATA[    392187.48238983 ]]></print><print TIME="1454983847" step="0"><![CDATA[
+]]></print><print TIME="1454983854" step="100"><![CDATA[.       100    7          0.00000000          0.00000000          0.00000000     -41460.15103625       5471.71565134          0.00000000          0.99336000 ]]></print><print TIME="1454983854" step="100"><![CDATA[      3216.37295665 ]]></print><print TIME="1454983854" step="100"><![CDATA[       938.79170938 ]]></print><print TIME="1454983854" step="100"><![CDATA[         0.00000000 ]]></print><print TIME="1454983854" step="100"><![CDATA[    -45615.31570228 ]]></print><print TIME="1454983854" step="100"><![CDATA[
+]]></print><print TIME="1454983860" step="200"><![CDATA[.       200    6          0.00000000          0.00000000          0.00000000     -42670.26935302       6065.58277535          0.00000000          0.99336000 ]]></print><print TIME="1454983860" step="200"><![CDATA[      3386.00944512 ]]></print><print TIME="1454983860" step="200"><![CDATA[       945.44196008 ]]></print><print TIME="1454983860" step="200"><![CDATA[         0.00000000 ]]></print><print TIME="1454983860" step="200"><![CDATA[    -47001.72075823 ]]></print><print TIME="1454983860" step="200"><![CDATA[
+]]></print><print TIME="1454983865" step="300"><![CDATA[.       300    5          0.00000000          0.00000000          0.00000000     -43203.39932126       6035.39216577          0.00000000          0.99336000 ]]></print><print TIME="1454983865" step="300"><![CDATA[      3478.44636184 ]]></print><print TIME="1454983865" step="300"><![CDATA[       952.84791131 ]]></print><print TIME="1454983865" step="300"><![CDATA[         0.00000000 ]]></print><print TIME="1454983865" step="300"><![CDATA[    -47634.69359442 ]]></print><print TIME="1454983865" step="300"><![CDATA[
+]]></print><print TIME="1454983870" step="400"><![CDATA[.       400    5          0.00000000          0.00000000          0.00000000     -43564.38595359       6096.53962432          0.00000000          0.99336000 ]]></print><print TIME="1454983870" step="400"><![CDATA[      3536.54412797 ]]></print><print TIME="1454983870" step="400"><![CDATA[       955.43219941 ]]></print><print TIME="1454983870" step="400"><![CDATA[         0.00000000 ]]></print><print TIME="1454983870" step="400"><![CDATA[    -48056.36228097 ]]></print><print TIME="1454983870" step="400"><![CDATA[
+]]></print><print TIME="1454983874" step="500"><![CDATA[.       500    4          0.00000000          0.00000000          0.00000000     -43827.32381278       6171.75120531          0.00000000          0.99336000 ]]></print><print TIME="1454983874" step="500"><![CDATA[      3579.04861794 ]]></print><print TIME="1454983874" step="500"><![CDATA[       957.45245616 ]]></print><print TIME="1454983874" step="500"><![CDATA[         0.00000000 ]]></print><print TIME="1454983874" step="500"><![CDATA[    -48363.82488688 ]]></print><print TIME="1454983874" step="500"><![CDATA[
+]]></print><print TIME="1454983878" step="600"><![CDATA[.       600    4          0.00000000          0.00000000          0.00000000     -44026.98668376       6239.74592495          0.00000000          0.99336000 ]]></print><print TIME="1454983878" step="600"><![CDATA[      3608.60867513 ]]></print><print TIME="1454983878" step="600"><![CDATA[       957.88087929 ]]></print><print TIME="1454983878" step="600"><![CDATA[         0.00000000 ]]></print><print TIME="1454983878" step="600"><![CDATA[    -48593.47623818 ]]></print><print TIME="1454983878" step="600"><![CDATA[
+]]></print><print TIME="1454983881" step="700"><![CDATA[.       700    3          0.00000000          0.00000000          0.00000000     -44190.73637014       6276.58929070          0.00000000          0.99336000 ]]></print><print TIME="1454983881" step="700"><![CDATA[      3632.12036863 ]]></print><print TIME="1454983881" step="700"><![CDATA[       957.60919491 ]]></print><print TIME="1454983881" step="700"><![CDATA[         0.00000000 ]]></print><print TIME="1454983881" step="700"><![CDATA[    -48780.46593368 ]]></print><print TIME="1454983881" step="700"><![CDATA[
+]]></print><print TIME="1454983886" step="800"><![CDATA[.       800    5          0.00000000          0.00000000          0.00000000     -44329.43823766       6294.28803613          0.00000000          0.99336000 ]]></print><print TIME="1454983886" step="800"><![CDATA[      3652.05724625 ]]></print><print TIME="1454983886" step="800"><![CDATA[       956.65047261 ]]></print><print TIME="1454983886" step="800"><![CDATA[         0.00000000 ]]></print><print TIME="1454983886" step="800"><![CDATA[    -48938.14595651 ]]></print><print TIME="1454983886" step="800"><![CDATA[
+]]></print><print TIME="1454983890" step="900"><![CDATA[.       900    4          0.00000000          0.00000000          0.00000000     -44450.17244090       6292.81222464          0.00000000          0.99336000 ]]></print><print TIME="1454983890" step="900"><![CDATA[      3670.71199849 ]]></print><print TIME="1454983890" step="900"><![CDATA[       955.52413004 ]]></print><print TIME="1454983890" step="900"><![CDATA[         0.00000000 ]]></print><print TIME="1454983890" step="900"><![CDATA[    -49076.40856943 ]]></print><print TIME="1454983890" step="900"><![CDATA[
+]]></print><print TIME="1454983893" step="1000"><![CDATA[.      1000    3          0.00000000          0.00000000          0.00000000     -44551.27549813       6264.44824547          0.00000000          0.99336000 ]]></print><print TIME="1454983893" step="1000"><![CDATA[      3688.00345969 ]]></print><print TIME="1454983893" step="1000"><![CDATA[       954.53332835 ]]></print><print TIME="1454983893" step="1000"><![CDATA[         0.00000000 ]]></print><print TIME="1454983893" step="1000"><![CDATA[    -49193.81228617 ]]></print><print TIME="1454983893" step="1000"><![CDATA[
+]]></print></log>
+	</go>
+	<reset author="dacb" version="1.0" date="2009-01-14"/>
+
+	
+	<go steps="500" hours="0" minutes="0">
+		<dynamics select="WAT" author="dacb" version="2009.0" date="2009-01-22"><init/><thread id="0"/><thread id="1"/><thread id="2"/><thread id="3"/><thread id="4"/><thread id="5"/><thread id="6"/><thread id="7"/><thread id="8"/><thread id="9"/><thread id="10"/><thread id="11"/><thread id="12"/><thread id="13"/><thread id="14"/><thread id="15"/><kernel/><dest/><variable name="timestep" type="double" value="0.002"/><variable name="nonbonded_pairlist_steps" type="integer" value="2"/><print TIME="1454983893" step="0"><![CDATA[	setting integration parameters
+		modified Brooks Beeman, Levitt M, 1983 & 1995
+]]></print><select statement="WAT" select="23248624"/><print TIME="1454983893" step="0"><![CDATA[	limited to atoms matching selection 'WAT' (10611 atoms found)
+]]></print><set name="mechanics_prune" type="string" value="WAT"><print TIME="1454983894" step="0"><![CDATA[	set variable var 'mechanics_prune' as type  string to WAT
+]]></print></set><print TIME="1454983894" step="0"><![CDATA[	calculating global & local coordinates...
+]]></print><mechanics><print TIME="1454983894" step="0"><![CDATA[	molecular mechanics system intializing:
+]]></print><variable name="mechanics" type="string" value="bond_pbadi angle_pbadi torsion_pbadi nonbonded_plus_pbadi"/><bond_pbadi bond_weight="1"><pbadi count="10" steps="500"/><variable name="pbadi_count" type="integer" value="10"/><variable name="pbadi_steps" type="integer" value="500"/><print TIME="1454983894" step="0"><![CDATA[		found 7074 bonds
+]]></print></bond_pbadi><angle_pbadi angle_weight="1"><pbadi count="10" steps="500"/><variable name="pbadi_count" type="integer" value="10"/><variable name="pbadi_steps" type="integer" value="500"/><print TIME="1454983894" step="0"><![CDATA[	angle
+		found 3537 angles
+]]></print></angle_pbadi><torsion_pbadi><print TIME="1454983894" step="0"><![CDATA[		found 0 torsions
+]]></print><pbadi count="10" steps="500"/><variable name="pbadi_count" type="integer" value="10"/><variable name="pbadi_steps" type="integer" value="500"/></torsion_pbadi><nonbonded_plus_pbadi cutoff_range="10" ascale="0.92" bscale="1" cscale="1" cscale_1_3_charge_groups="0.4" nonbonded_pairlist_steps="2" cutoff_buffer="2"><variable name="cutoff_range" type="double" value="10"/><variable name="ascale" type="double" value="0.92"/><variable name="bscale" type="double" value="1"/><variable name="cscale" type="double" value="1"/><variable name="cscale_1_3_charge_groups" type="double" value="0.4"/><variable name="nonbonded_pairlist_steps" type="integer" value="2"/><pbadi count="10" steps="500"/><variable name="pbadi_count" type="integer" value="10"/><variable name="pbadi_steps" type="integer" value="500"/><print TIME="1454983894" step="0"><![CDATA[	nonbonded plus
+		cutoff range	=  10.0000
+		vdw A scale	=   0.9200
+		vdw B scale	=   1.0000
+		els C scale	=   1.0000
+		els 1-3 charge group scale	=   0.4000
+]]></print><hash3d cutoff="10" load_balancing="yes"><print TIME="1454983894" step="0"><![CDATA[	creating new hash3d:
+]]></print><print TIME="1454983894" step="0"><![CDATA[	method	= charge group based 3d hashing function (lite/MAX version)
+]]></print><print TIME="1454983894" step="0"><![CDATA[	cutoff range	= 10.00
+]]></print><print TIME="1454983894" step="0"><![CDATA[	box dims	= (  42.66547553,  42.38219401,  64.12375193 )
+]]></print><print TIME="1454983894" step="0"><![CDATA[	bin dims	= (  10.66636888,  10.59554850,  10.68729199 )
+]]></print><print TIME="1454983894" step="0"><![CDATA[	bin volume	= 1207.83529959
+]]></print><print TIME="1454983894" step="0"><![CDATA[	box / bin	= (    6,    6,    8 )
+]]></print><print TIME="1454983894" step="0"><![CDATA[	allocating 288 bins (96 are local)
+]]></print><print TIME="1454983894" step="0"><![CDATA[	building neighbor hash arrays and initializing bin mutex sets
+]]></print><print TIME="1454983894" step="0"><![CDATA[	there are 14 neighbors for each spatial bin
+]]></print><print TIME="1454983894" step="0"><![CDATA[	max exclusion matrix dist = 26, chain distant exclusions = 10
+]]></print><print TIME="1454983894" step="0"><![CDATA[	there are 3862 atoms in hash3d
+]]></print><print TIME="1454983894" step="0"><![CDATA[	thread synchronization for load balancing is enabled
+]]></print></hash3d></nonbonded_plus_pbadi><variable name="mechanics_prune" type="string" value="WAT"/><print TIME="1454983894" step="0"><![CDATA[	pruning is enabled
+		only atoms in or interacting with those in the
+		selection statement 'WAT'
+		will be included in potential enery calculations
+]]></print><select statement="WAT" select="23252208"/><print TIME="1454983894" step="0"><![CDATA[	bond_pbadi   bonds with 'print bad interaction' (Levitt et al. force field)
+]]></print><print TIME="1454983894" step="0"><![CDATA[	angle_pbadi  angles with 'print bad interaction' (Levitt et al. force field)
+]]></print><print TIME="1454983894" step="0"><![CDATA[	torsion_pbadi torsions with 'print bad interaction' (Levitt et al. force field)
+]]></print><print TIME="1454983894" step="0"><![CDATA[	nonbonded_plus_pbadi nonbonded with 'print bad interaction', i.e. van der Waals & electrostatics (Levitt et al. force field)
+]]></print></mechanics></dynamics>
+		<thermostat temperature="310" heating_degrees="0.1" random_seed="1" author="dacb" version="1.0" date="2009-01-14"><init/><kernel/><dest/><print TIME="1454983894" step="0"><![CDATA[	target temperature                      	= 310.0000
+]]></print><print TIME="1454983894" step="0"><![CDATA[	heating degrees                         	=   0.1000
+]]></print><print TIME="1454983894" step="0"><![CDATA[	impulse magnitude                       	= 0.000154
+]]></print><print TIME="1454983894" step="0"><![CDATA[	equilibration steps                     	=    18700
+]]></print><print TIME="1454983894" step="0"><![CDATA[	max avg temperature                     	= 316.9500
+]]></print><print TIME="1454983894" step="0"><![CDATA[	min avg temperature                     	= 303.050030
+]]></print><print TIME="1454983894" step="0"><![CDATA[	random seed                             	=        1
+]]></print><print TIME="1454983894" step="0"><![CDATA[	random max (from RAND_MAX)              	= 2147483647
+]]></print></thermostat>
+		<log granularity="100" author="dacb" version="1.0" date="2009-01-14"><init/><kernel/><dest/><print TIME="1454983894" step="0"><![CDATA[	standard out logging every 100 steps
+]]></print><print TIME="1454983894" step="0"><![CDATA[#      step secs         e(kcal/mol)        ke(kcal/mol)      temperature(K)        pe(kcal/mol)   virial(kcal/molA)       pressure(atm)       density(g/ml)]]></print><print TIME="1454983894" step="0"><![CDATA[bond_pbadi(kcal/mol)]]></print><print TIME="1454983894" step="0"><![CDATA[angle_pbadi(kcal/mol)]]></print><print TIME="1454983894" step="0"><![CDATA[torsion_pbadi(kcal/mol)]]></print><print TIME="1454983894" step="0"><![CDATA[nonbonded_plus_pbadi(kcal/mol)]]></print><print TIME="1454983894" step="0"><![CDATA[
+]]></print><print TIME="1454983894" step="0"><![CDATA[.         0    0     -44548.46601400          3.28408578          0.05191572     -44548.46601400       6301.94159262      -3730.22069875          0.99336000 ]]></print><print TIME="1454983894" step="0"><![CDATA[      3693.17691153 ]]></print><print TIME="1454983894" step="0"><![CDATA[       955.93775975 ]]></print><print TIME="1454983894" step="0"><![CDATA[         0.00000000 ]]></print><print TIME="1454983894" step="0"><![CDATA[    -49197.58068528 ]]></print><print TIME="1454983894" step="0"><![CDATA[
+]]></print><print TIME="1454983898" step="100"><![CDATA[.       100    4     -44371.26991013       1076.50841278         17.01773581     -44907.57603252       5715.14121053      -3171.25195154          0.99336000 ]]></print><print TIME="1454983899" step="100"><![CDATA[      3790.46485153 ]]></print><print TIME="1454983899" step="100"><![CDATA[       966.28445337 ]]></print><print TIME="1454983899" step="100"><![CDATA[         0.00000000 ]]></print><print TIME="1454983899" step="100"><![CDATA[    -49664.32533741 ]]></print><print TIME="1454983899" step="100"><![CDATA[
+]]></print><print TIME="1454983902" step="200"><![CDATA[.       200    4     -44192.81307564       1631.36430161         25.78904759     -45005.66841291       5971.10014845      -3213.62887945          0.99336000 ]]></print><print TIME="1454983903" step="200"><![CDATA[      3833.57650895 ]]></print><print TIME="1454983903" step="200"><![CDATA[       955.70686432 ]]></print><print TIME="1454983903" step="200"><![CDATA[         0.00000000 ]]></print><print TIME="1454983903" step="200"><![CDATA[    -49794.95178618 ]]></print><print TIME="1454983903" step="200"><![CDATA[
+]]></print><print TIME="1454983906" step="300"><![CDATA[.       300    4     -44018.64577718       2023.88187731         31.99407147     -45028.87221976       5893.80897229      -3089.99423099          0.99336000 ]]></print><print TIME="1454983906" step="300"><![CDATA[      3896.91898677 ]]></print><print TIME="1454983906" step="300"><![CDATA[       974.40559521 ]]></print><print TIME="1454983906" step="300"><![CDATA[         0.00000000 ]]></print><print TIME="1454983906" step="300"><![CDATA[    -49900.19680174 ]]></print><print TIME="1454983906" step="300"><![CDATA[
+]]></print><print TIME="1454983909" step="400"><![CDATA[.       400    3     -43846.90303635       2358.83925063         37.28916811     -45024.56899365       5649.28328486      -2879.18210955          0.99336000 ]]></print><print TIME="1454983909" step="400"><![CDATA[      3926.95331885 ]]></print><print TIME="1454983910" step="400"><![CDATA[       963.63447052 ]]></print><print TIME="1454983910" step="400"><![CDATA[         0.00000000 ]]></print><print TIME="1454983910" step="400"><![CDATA[    -49915.15678302 ]]></print><print TIME="1454983910" step="400"><![CDATA[
+]]></print><print TIME="1454983913" step="500"><![CDATA[.       500    4     -43673.97522430       2691.13537417         42.54219500     -45017.96931124       5417.13925957      -2676.13745777          0.99336000 ]]></print><print TIME="1454983913" step="500"><![CDATA[      3927.24283399 ]]></print><print TIME="1454983913" step="500"><![CDATA[       981.81884174 ]]></print><print TIME="1454983913" step="500"><![CDATA[         0.00000000 ]]></print><print TIME="1454983913" step="500"><![CDATA[    -49927.03098697 ]]></print><print TIME="1454983913" step="500"><![CDATA[
+]]></print></log>
+	</go>
+	<reset author="dacb" version="1.0" date="2009-01-14"/>
+
+	
+	<go steps="500" hours="0" minutes="0">
+		<sdmin select="WAT" author="dacb" version="2009.0" date="2009-01-22"><init/><kernel/><thread id="0"/><thread id="1"/><thread id="2"/><thread id="3"/><thread id="4"/><thread id="5"/><thread id="6"/><thread id="7"/><thread id="8"/><thread id="9"/><thread id="10"/><thread id="11"/><thread id="12"/><thread id="13"/><thread id="14"/><thread id="15"/><dest/><variable name="nonbonded_pairlist_steps" type="integer" value="2"/><select statement="WAT" select="33887952"/><print TIME="1454983913" step="0"><![CDATA[	limited to atoms matching selection 'WAT' (10611 atoms found)
+]]></print><set name="mechanics_prune" type="string" value="WAT"><print TIME="1454983913" step="0"><![CDATA[	set variable var 'mechanics_prune' as type  string to WAT
+]]></print></set><print TIME="1454983913" step="0"><![CDATA[	calculating global & local coordinates...
+]]></print><mechanics><print TIME="1454983913" step="0"><![CDATA[	molecular mechanics system intializing:
+]]></print><variable name="mechanics" type="string" value="bond_pbadi angle_pbadi torsion_pbadi nonbonded_plus_pbadi"/><bond_pbadi bond_weight="1"><pbadi count="10" steps="500"/><variable name="pbadi_count" type="integer" value="10"/><variable name="pbadi_steps" type="integer" value="500"/><print TIME="1454983914" step="0"><![CDATA[		found 7074 bonds
+]]></print></bond_pbadi><angle_pbadi angle_weight="1"><pbadi count="10" steps="500"/><variable name="pbadi_count" type="integer" value="10"/><variable name="pbadi_steps" type="integer" value="500"/><print TIME="1454983914" step="0"><![CDATA[	angle
+		found 3537 angles
+]]></print></angle_pbadi><torsion_pbadi><print TIME="1454983914" step="0"><![CDATA[		found 0 torsions
+]]></print><pbadi count="10" steps="500"/><variable name="pbadi_count" type="integer" value="10"/><variable name="pbadi_steps" type="integer" value="500"/></torsion_pbadi><nonbonded_plus_pbadi cutoff_range="10" ascale="0.92" bscale="1" cscale="1" cscale_1_3_charge_groups="0.4" nonbonded_pairlist_steps="2" cutoff_buffer="2"><variable name="cutoff_range" type="double" value="10"/><variable name="ascale" type="double" value="0.92"/><variable name="bscale" type="double" value="1"/><variable name="cscale" type="double" value="1"/><variable name="cscale_1_3_charge_groups" type="double" value="0.4"/><variable name="nonbonded_pairlist_steps" type="integer" value="2"/><pbadi count="10" steps="500"/><variable name="pbadi_count" type="integer" value="10"/><variable name="pbadi_steps" type="integer" value="500"/><print TIME="1454983914" step="0"><![CDATA[	nonbonded plus
+		cutoff range	=  10.0000
+		vdw A scale	=   0.9200
+		vdw B scale	=   1.0000
+		els C scale	=   1.0000
+		els 1-3 charge group scale	=   0.4000
+]]></print><hash3d cutoff="10" load_balancing="yes"><print TIME="1454983914" step="0"><![CDATA[	creating new hash3d:
+]]></print><print TIME="1454983914" step="0"><![CDATA[	method	= charge group based 3d hashing function (lite/MAX version)
+]]></print><print TIME="1454983914" step="0"><![CDATA[	cutoff range	= 10.00
+]]></print><print TIME="1454983914" step="0"><![CDATA[	box dims	= (  42.66547553,  42.38219401,  64.12375193 )
+]]></print><print TIME="1454983914" step="0"><![CDATA[	bin dims	= (  10.66636888,  10.59554850,  10.68729199 )
+]]></print><print TIME="1454983914" step="0"><![CDATA[	bin volume	= 1207.83529959
+]]></print><print TIME="1454983914" step="0"><![CDATA[	box / bin	= (    6,    6,    8 )
+]]></print><print TIME="1454983914" step="0"><![CDATA[	allocating 288 bins (96 are local)
+]]></print><print TIME="1454983914" step="0"><![CDATA[	building neighbor hash arrays and initializing bin mutex sets
+]]></print><print TIME="1454983914" step="0"><![CDATA[	there are 14 neighbors for each spatial bin
+]]></print><print TIME="1454983914" step="0"><![CDATA[	max exclusion matrix dist = 26, chain distant exclusions = 10
+]]></print><print TIME="1454983914" step="0"><![CDATA[	there are 3862 atoms in hash3d
+]]></print><print TIME="1454983914" step="0"><![CDATA[	thread synchronization for load balancing is enabled
+]]></print></hash3d></nonbonded_plus_pbadi><variable name="mechanics_prune" type="string" value="WAT"/><print TIME="1454983913" step="0"><![CDATA[	pruning is enabled
+		only atoms in or interacting with those in the
+		selection statement 'WAT'
+		will be included in potential enery calculations
+]]></print><select statement="WAT" select="24077760"/><print TIME="1454983914" step="0"><![CDATA[	bond_pbadi   bonds with 'print bad interaction' (Levitt et al. force field)
+]]></print><print TIME="1454983914" step="0"><![CDATA[	angle_pbadi  angles with 'print bad interaction' (Levitt et al. force field)
+]]></print><print TIME="1454983914" step="0"><![CDATA[	torsion_pbadi torsions with 'print bad interaction' (Levitt et al. force field)
+]]></print><print TIME="1454983914" step="0"><![CDATA[	nonbonded_plus_pbadi nonbonded with 'print bad interaction', i.e. van der Waals & electrostatics (Levitt et al. force field)
+]]></print></mechanics></sdmin>
+		<log granularity="100" author="dacb" version="1.0" date="2009-01-14"><init/><kernel/><dest/><print TIME="1454983914" step="0"><![CDATA[	standard out logging every 100 steps
+]]></print><print TIME="1454983914" step="0"><![CDATA[#      step secs         e(kcal/mol)        ke(kcal/mol)      temperature(K)        pe(kcal/mol)   virial(kcal/molA)       pressure(atm)       density(g/ml)]]></print><print TIME="1454983914" step="0"><![CDATA[bond_pbadi(kcal/mol)]]></print><print TIME="1454983914" step="0"><![CDATA[angle_pbadi(kcal/mol)]]></print><print TIME="1454983914" step="0"><![CDATA[torsion_pbadi(kcal/mol)]]></print><print TIME="1454983914" step="0"><![CDATA[nonbonded_plus_pbadi(kcal/mol)]]></print><print TIME="1454983914" step="0"><![CDATA[
+]]></print><print TIME="1454983914" step="0"><![CDATA[.         0    0          0.00000000          0.00000000          0.00000000     -45017.96931124       5417.13925957          0.00000000          0.99336000 ]]></print><print TIME="1454983914" step="0"><![CDATA[      3927.24283399 ]]></print><print TIME="1454983914" step="0"><![CDATA[       981.81884174 ]]></print><print TIME="1454983914" step="0"><![CDATA[         0.00000000 ]]></print><print TIME="1454983914" step="0"><![CDATA[    -49927.03098697 ]]></print><print TIME="1454983914" step="0"><![CDATA[
+]]></print><print TIME="1454983918" step="100"><![CDATA[.       100    4          0.00000000          0.00000000          0.00000000     -46026.42238980       6683.12732060          0.00000000          0.99336000 ]]></print><print TIME="1454983918" step="100"><![CDATA[      3874.41705947 ]]></print><print TIME="1454983918" step="100"><![CDATA[       924.16030713 ]]></print><print TIME="1454983918" step="100"><![CDATA[         0.00000000 ]]></print><print TIME="1454983918" step="100"><![CDATA[    -50824.99975640 ]]></print><print TIME="1454983918" step="100"><![CDATA[
+]]></print><print TIME="1454983922" step="200"><![CDATA[.       200    4          0.00000000          0.00000000          0.00000000     -46139.86610347       6497.28102899          0.00000000          0.99336000 ]]></print><print TIME="1454983922" step="200"><![CDATA[      3905.94160075 ]]></print><print TIME="1454983922" step="200"><![CDATA[       924.74923740 ]]></print><print TIME="1454983922" step="200"><![CDATA[         0.00000000 ]]></print><print TIME="1454983922" step="200"><![CDATA[    -50970.55694161 ]]></print><print TIME="1454983922" step="200"><![CDATA[
+]]></print><print TIME="1454983925" step="300"><![CDATA[.       300    3          0.00000000          0.00000000          0.00000000     -46203.32075146       6355.79967590          0.00000000          0.99336000 ]]></print><print TIME="1454983925" step="300"><![CDATA[      3924.91798517 ]]></print><print TIME="1454983925" step="300"><![CDATA[       925.12579209 ]]></print><print TIME="1454983925" step="300"><![CDATA[         0.00000000 ]]></print><print TIME="1454983925" step="300"><![CDATA[    -51053.36452872 ]]></print><print TIME="1454983925" step="300"><![CDATA[
+]]></print><print TIME="1454983928" step="400"><![CDATA[.       400    3          0.00000000          0.00000000          0.00000000     -46232.59054737       6204.36145509          0.00000000          0.99336000 ]]></print><print TIME="1454983928" step="400"><![CDATA[      3938.89577185 ]]></print><print TIME="1454983928" step="400"><![CDATA[       927.23181373 ]]></print><print TIME="1454983928" step="400"><![CDATA[         0.00000000 ]]></print><print TIME="1454983928" step="400"><![CDATA[    -51098.71813295 ]]></print><print TIME="1454983928" step="400"><![CDATA[
+]]></print><print TIME="1454983931" step="500"><![CDATA[.       500    3          0.00000000          0.00000000          0.00000000     -46272.02986362       6192.87696670          0.00000000          0.99336000 ]]></print><print TIME="1454983931" step="500"><![CDATA[      3945.50667178 ]]></print><print TIME="1454983931" step="500"><![CDATA[       925.79154172 ]]></print><print TIME="1454983931" step="500"><![CDATA[         0.00000000 ]]></print><print TIME="1454983931" step="500"><![CDATA[    -51143.32807711 ]]></print><print TIME="1454983931" step="500"><![CDATA[
+]]></print></log>
+	</go>
+	<reset author="dacb" version="1.0" date="2009-01-14"/>
+
+	
+	<go steps="500" hours="0" minutes="0">
+		<sdmin select="~WAT" author="dacb" version="2009.0" date="2009-01-22"><init/><kernel/><thread id="0"/><thread id="1"/><thread id="2"/><thread id="3"/><thread id="4"/><thread id="5"/><thread id="6"/><thread id="7"/><thread id="8"/><thread id="9"/><thread id="10"/><thread id="11"/><thread id="12"/><thread id="13"/><thread id="14"/><thread id="15"/><dest/><variable name="nonbonded_pairlist_steps" type="integer" value="2"/><select statement="~WAT" select="32562064"/><print TIME="1454983931" step="0"><![CDATA[	limited to atoms matching selection '~WAT' (786 atoms found)
+]]></print><set name="mechanics_prune" type="string" value="~WAT"><print TIME="1454983931" step="0"><![CDATA[	set variable var 'mechanics_prune' as type  string to ~WAT
+]]></print></set><print TIME="1454983931" step="0"><![CDATA[	calculating global & local coordinates...
+]]></print><mechanics><print TIME="1454983931" step="0"><![CDATA[	molecular mechanics system intializing:
+]]></print><variable name="mechanics" type="string" value="bond_pbadi angle_pbadi torsion_pbadi nonbonded_plus_pbadi"/><bond_pbadi bond_weight="1"><pbadi count="10" steps="500"/><variable name="pbadi_count" type="integer" value="10"/><variable name="pbadi_steps" type="integer" value="500"/><print TIME="1454983931" step="0"><![CDATA[		found 792 bonds
+]]></print></bond_pbadi><angle_pbadi angle_weight="1"><pbadi count="10" steps="500"/><variable name="pbadi_count" type="integer" value="10"/><variable name="pbadi_steps" type="integer" value="500"/><print TIME="1454983931" step="0"><![CDATA[	angle
+		found 1429 angles
+]]></print></angle_pbadi><torsion_pbadi><print TIME="1454983931" step="0"><![CDATA[		found 1415 torsions
+]]></print><pbadi count="10" steps="500"/><variable name="pbadi_count" type="integer" value="10"/><variable name="pbadi_steps" type="integer" value="500"/></torsion_pbadi><nonbonded_plus_pbadi cutoff_range="10" ascale="0.92" bscale="1" cscale="1" cscale_1_3_charge_groups="0.4" nonbonded_pairlist_steps="2" cutoff_buffer="2"><variable name="cutoff_range" type="double" value="10"/><variable name="ascale" type="double" value="0.92"/><variable name="bscale" type="double" value="1"/><variable name="cscale" type="double" value="1"/><variable name="cscale_1_3_charge_groups" type="double" value="0.4"/><variable name="nonbonded_pairlist_steps" type="integer" value="2"/><pbadi count="10" steps="500"/><variable name="pbadi_count" type="integer" value="10"/><variable name="pbadi_steps" type="integer" value="500"/><print TIME="1454983931" step="0"><![CDATA[	nonbonded plus
+		cutoff range	=  10.0000
+		vdw A scale	=   0.9200
+		vdw B scale	=   1.0000
+		els C scale	=   1.0000
+		els 1-3 charge group scale	=   0.4000
+]]></print><hash3d cutoff="10" load_balancing="yes"><print TIME="1454983931" step="0"><![CDATA[	creating new hash3d:
+]]></print><print TIME="1454983931" step="0"><![CDATA[	method	= charge group based 3d hashing function (lite/MAX version)
+]]></print><print TIME="1454983931" step="0"><![CDATA[	cutoff range	= 10.00
+]]></print><print TIME="1454983931" step="0"><![CDATA[	box dims	= (  42.66547553,  42.38219401,  64.12375193 )
+]]></print><print TIME="1454983931" step="0"><![CDATA[	bin dims	= (  10.66636888,  10.59554850,  10.68729199 )
+]]></print><print TIME="1454983931" step="0"><![CDATA[	bin volume	= 1207.83529959
+]]></print><print TIME="1454983931" step="0"><![CDATA[	box / bin	= (    6,    6,    8 )
+]]></print><print TIME="1454983931" step="0"><![CDATA[	allocating 288 bins (96 are local)
+]]></print><print TIME="1454983931" step="0"><![CDATA[	building neighbor hash arrays and initializing bin mutex sets
+]]></print><print TIME="1454983931" step="0"><![CDATA[	there are 14 neighbors for each spatial bin
+]]></print><print TIME="1454983931" step="0"><![CDATA[	max exclusion matrix dist = 26, chain distant exclusions = 10
+]]></print><print TIME="1454983931" step="0"><![CDATA[	there are 3862 atoms in hash3d
+]]></print><print TIME="1454983931" step="0"><![CDATA[	thread synchronization for load balancing is enabled
+]]></print></hash3d></nonbonded_plus_pbadi><variable name="mechanics_prune" type="string" value="~WAT"/><print TIME="1454983931" step="0"><![CDATA[	pruning is enabled
+		only atoms in or interacting with those in the
+		selection statement '~WAT'
+		will be included in potential enery calculations
+]]></print><select statement="~WAT" select="32658560"/><print TIME="1454983931" step="0"><![CDATA[	bond_pbadi   bonds with 'print bad interaction' (Levitt et al. force field)
+]]></print><print TIME="1454983931" step="0"><![CDATA[	angle_pbadi  angles with 'print bad interaction' (Levitt et al. force field)
+]]></print><print TIME="1454983931" step="0"><![CDATA[	torsion_pbadi torsions with 'print bad interaction' (Levitt et al. force field)
+]]></print><print TIME="1454983931" step="0"><![CDATA[	nonbonded_plus_pbadi nonbonded with 'print bad interaction', i.e. van der Waals & electrostatics (Levitt et al. force field)
+]]></print></mechanics></sdmin>
+		<log granularity="100" author="dacb" version="1.0" date="2009-01-14"><init/><kernel/><dest/><print TIME="1454983931" step="0"><![CDATA[	standard out logging every 100 steps
+]]></print><print TIME="1454983931" step="0"><![CDATA[#      step secs         e(kcal/mol)        ke(kcal/mol)      temperature(K)        pe(kcal/mol)   virial(kcal/molA)       pressure(atm)       density(g/ml)]]></print><print TIME="1454983932" step="0"><![CDATA[bond_pbadi(kcal/mol)]]></print><print TIME="1454983932" step="0"><![CDATA[angle_pbadi(kcal/mol)]]></print><print TIME="1454983932" step="0"><![CDATA[torsion_pbadi(kcal/mol)]]></print><print TIME="1454983932" step="0"><![CDATA[nonbonded_plus_pbadi(kcal/mol)]]></print><print TIME="1454983932" step="0"><![CDATA[
+]]></print><print TIME="1454983932" step="0"><![CDATA[.         0    0          0.00000000          0.00000000          0.00000000      -1302.23587064       -275.60038709          0.00000000          0.99336000 ]]></print><print TIME="1454983932" step="0"><![CDATA[        40.19155936 ]]></print><print TIME="1454983932" step="0"><![CDATA[       261.43439603 ]]></print><print TIME="1454983932" step="0"><![CDATA[       887.26241908 ]]></print><print TIME="1454983932" step="0"><![CDATA[     -2491.12424510 ]]></print><print TIME="1454983932" step="0"><![CDATA[
+]]></print><print TIME="1454983933" step="100"><![CDATA[.       100    1          0.00000000          0.00000000          0.00000000      -1403.83003405       -284.70820237          0.00000000          0.99336000 ]]></print><print TIME="1454983933" step="100"><![CDATA[        34.32333231 ]]></print><print TIME="1454983933" step="100"><![CDATA[       268.14468339 ]]></print><print TIME="1454983933" step="100"><![CDATA[       878.42906529 ]]></print><print TIME="1454983933" step="100"><![CDATA[     -2584.72711503 ]]></print><print TIME="1454983933" step="100"><![CDATA[
+]]></print><print TIME="1454983935" step="200"><![CDATA[.       200    2          0.00000000          0.00000000          0.00000000      -1418.41876116       -230.59052538          0.00000000          0.99336000 ]]></print><print TIME="1454983935" step="200"><![CDATA[        34.41431224 ]]></print><print TIME="1454983935" step="200"><![CDATA[       268.08557608 ]]></print><print TIME="1454983935" step="200"><![CDATA[       874.95949012 ]]></print><print TIME="1454983935" step="200"><![CDATA[     -2595.87813959 ]]></print><print TIME="1454983935" step="200"><![CDATA[
+]]></print><print TIME="1454983936" step="300"><![CDATA[.       300    1          0.00000000          0.00000000          0.00000000      -1426.73176388       -198.58932165          0.00000000          0.99336000 ]]></print><print TIME="1454983936" step="300"><![CDATA[        34.44680276 ]]></print><print TIME="1454983936" step="300"><![CDATA[       268.34810378 ]]></print><print TIME="1454983936" step="300"><![CDATA[       872.15669961 ]]></print><print TIME="1454983936" step="300"><![CDATA[     -2601.68337003 ]]></print><print TIME="1454983936" step="300"><![CDATA[
+]]></print><print TIME="1454983938" step="400"><![CDATA[.       400    2          0.00000000          0.00000000          0.00000000      -1432.94218216       -176.40704578          0.00000000          0.99336000 ]]></print><print TIME="1454983938" step="400"><![CDATA[        34.52260308 ]]></print><print TIME="1454983938" step="400"><![CDATA[       268.85742287 ]]></print><print TIME="1454983938" step="400"><![CDATA[       869.58067202 ]]></print><print TIME="1454983938" step="400"><![CDATA[     -2605.90288014 ]]></print><print TIME="1454983938" step="400"><![CDATA[
+]]></print><print TIME="1454983939" step="500"><![CDATA[.       500    1          0.00000000          0.00000000          0.00000000      -1435.51910551       -158.05688946          0.00000000          0.99336000 ]]></print><print TIME="1454983940" step="500"><![CDATA[        36.09697503 ]]></print><print TIME="1454983940" step="500"><![CDATA[       270.65352805 ]]></print><print TIME="1454983940" step="500"><![CDATA[       867.09652812 ]]></print><print TIME="1454983940" step="500"><![CDATA[     -2609.36613670 ]]></print><print TIME="1454983940" step="500"><![CDATA[
+]]></print></log>
+	</go>
+	<reset author="dacb" version="1.0" date="2009-01-14"/>
+
+	
+	<pdb_write filename="start.pdb" write_solvent="true" author="dacb" version="2009.0" date="2009-01-22"><file filename="start.pdb" mode="w" size="726374"/><print TIME="1454983940" step="0"><![CDATA[	writing PDB file 'start.pdb'
+]]></print><print TIME="1454983940" step="0"><![CDATA[	putting solvent atoms back in the box
+]]></print><print TIME="1454983940" step="0"><![CDATA[	reflecting solvent atoms to owner molecules
+]]></print><print TIME="1454983940" step="0"><![CDATA[	calculating global & local coordinates...
+]]></print><print TIME="1454984026" step="0"><![CDATA[	calculating global & local coordinates...
+]]></print></pdb_write>
+	<mdr_write filename="start.mdr" author="dacb" version="1.0" date="2009-01-14"><file filename="start.mdr" mode="w" size="820632"/></mdr_write>
+
+<halt><print TIME="1454984026"><![CDATA[kernel is collecting threads...]]></print><print TIME="1454984026"><![CDATA[done
+]]></print><print TIME="1454984026"><![CDATA[in lucem Molecular Mechanics kernel performing clean shutdown...
+]]></print></halt></workbook>

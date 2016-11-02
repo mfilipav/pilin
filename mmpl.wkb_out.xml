@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<workbook xmlns="http://inlucemmolecularmechanics/workbook" mmpl_uri="file:///home1/02596/chengc2/ilmm/lib/sample_parmlib.xml" threads="16" workbook_uri="file://mmpl.wkb_in.xml" workbook_log="mmpl.wkb_out.xml" version="20110520.65" host="login1.stampede.tacc.utexas.edu" date="Mon Feb 08 2016 @ 20:07:04" user="tg832040" compiler="icc" compiler_flags="-parallel -O2 -I./include  -DH3D_LOAD_BALANCE" compile_date="Fri Sep  6 11:26:56 2013">
+	
+	<copyright>*** in lucem Molecular Mechanics
+*** Author: David A. C. Beck, dacb@u.washington.edu
+***         University of Washington
+*** Copyright: Beck, Alonso, Daggett
+***          2000-2011, All rights reserved.
+*** NOTICE: Unauthorized use, duplication and / or distribution
+***         will be subject to criminal and civil penalties.
+</copyright><boot><mmpl uri="file:///home1/02596/chengc2/ilmm/lib/sample_parmlib.xml" name="standard" version="2010.08.26" atoms="15" groups="36" residues="96" molecules="1" bonds="52" angles="136" torsions="90"><print TIME="1454983626"><![CDATA[molecular mechanics parameter library (standard v.2010.08.26) read from file source: 'file:///home1/02596/chengc2/ilmm/lib/sample_parmlib.xml'
+	atoms          15	groups         36
+	residues       96	molecules       1
+	bonds          52	angles        136
+	torsions       90	total         426
+]]></print></mmpl><print TIME="1454983627"><![CDATA[setting variables to compile time defaults
+]]></print><set name="DEBUG" type="integer" value="1"><print TIME="1454983627"><![CDATA[	set variable var 'DEBUG' as type integer to 1
+]]></print></set><set name="library_path" type="string" value="/home1/02596/chengc2/ilmm/bin"><print TIME="1454983627"><![CDATA[	set variable var 'library_path' as type  string to /home1/02596/chengc2/ilmm/bin
+]]></print></set><set name="mechanics" type="string" value="bond angle torsion nonbonded_plus"><print TIME="1454983627"><![CDATA[	set variable var 'mechanics' as type  string to bond angle torsion nonbonded_plus
+]]></print></set><set name="cutoff_range" type="double" value="10"><print TIME="1454983627"><![CDATA[	set variable var 'cutoff_range' as type  double to 10
+]]></print></set><set name="ascale" type="double" value="0.92"><print TIME="1454983627"><![CDATA[	set variable var 'ascale' as type  double to 0.92
+]]></print></set><set name="bscale" type="double" value="1"><print TIME="1454983627"><![CDATA[	set variable var 'bscale' as type  double to 1
+]]></print></set><set name="cscale" type="double" value="1"><print TIME="1454983627"><![CDATA[	set variable var 'cscale' as type  double to 1
+]]></print></set><set name="cscale_1_3_charge_groups" type="double" value="0.4"><print TIME="1454983627"><![CDATA[	set variable var 'cscale_1_3_charge_groups' as type  double to 0.4
+]]></print></set><set name="nonbonded_pairlist_steps" type="integer" value="2"><print TIME="1454983627"><![CDATA[	set variable var 'nonbonded_pairlist_steps' as type integer to 2
+]]></print></set><set name="timestep" type="double" value="0.002"><print TIME="1454983627"><![CDATA[	set variable var 'timestep' as type  double to 0.002
+]]></print></set><set name="stepsize" type="double" value="0.01"><print TIME="1454983627"><![CDATA[	set variable var 'stepsize' as type  double to 0.01
+]]></print></set><set name="pbadi_count" type="integer" value="10"><print TIME="1454983627"><![CDATA[	set variable var 'pbadi_count' as type integer to 10
+]]></print></set><set name="pbadi_steps" type="integer" value="500"><print TIME="1454983627"><![CDATA[	set variable var 'pbadi_steps' as type integer to 500
+]]></print></set><set name="pdb_write_solvent_mols" type="string" value="WAT methanol ethanol urea tmao"><print TIME="1454983627"><![CDATA[	set variable var 'pdb_write_solvent_mols' as type  string to WAT methanol ethanol urea tmao
+]]></print></set><print TIME="1454983627"><![CDATA[starting thread 0...
+]]></print><print TIME="1454983627"><![CDATA[starting thread 1...
+]]></print><print TIME="1454983627"><![CDATA[starting thread 2...
+]]></print><print TIME="1454983627"><![CDATA[starting thread 3...
+]]></print><print TIME="1454983627"><![CDATA[starting thread 4...
+]]></print><print TIME="1454983627"><![CDATA[starting thread 5...
+]]></print><print TIME="1454983627"><![CDATA[starting thread 6...
+]]></print><print TIME="1454983627"><![CDATA[starting thread 7...
+]]></print><print TIME="1454983627"><![CDATA[starting thread 8...
+]]></print><print TIME="1454983627"><![CDATA[starting thread 9...
+]]></print><print TIME="1454983627"><![CDATA[starting thread 10...
+]]></print><print TIME="1454983627"><![CDATA[starting thread 11...
+]]></print><print TIME="1454983627"><![CDATA[starting thread 12...
+]]></print><print TIME="1454983627"><![CDATA[starting thread 13...
+]]></print><print TIME="1454983627"><![CDATA[starting thread 14...
+]]></print><print TIME="1454983627"><![CDATA[starting thread 15...
+]]></print></boot><pdb2mmpl pdb_filename="ID3.pdb" pdb_chain="A" destination_molecule="ID3" author="dacb" version="2009.0" date="2009-01-22" nterminate="true" cterminate="true"><variable name="library_path" type="string" value="/home1/02596/chengc2/ilmm/bin"/><print TIME="1454983627"><![CDATA[	trying dynamic library /home1/02596/chengc2/ilmm/bin/pdb2mmpl.so for module pdb2mmpl
+]]></print><print TIME="1454983627"><![CDATA[	opened dynamic library file '/home1/02596/chengc2/ilmm/bin/pdb2mmpl.so'
+]]></print><print TIME="1454983627"><![CDATA[	executing library entrypoint function 'library_init'
+]]></print><file filename="ID3.pdb" mode="r" size="31520"/><print TIME="1454983627"><![CDATA[	determining sequences from ATOM, HETATM, and TER records
+]]></print><print TIME="1454983627"><![CDATA[chain: A	(51 residues)
+	]]></print><print TIME="1454983628"><![CDATA[ASP ]]></print><print TIME="1454983628"><![CDATA[ALA ]]></print><print TIME="1454983628"><![CDATA[LEU ]]></print><print TIME="1454983628"><![CDATA[ALA ]]></print><print TIME="1454983628"><![CDATA[ARG ]]></print><print TIME="1454983628"><![CDATA[ALA ]]></print><print TIME="1454983628"><![CDATA[ALA ]]></print><print TIME="1454983628"><![CDATA[GLU ]]></print><print TIME="1454983628"><![CDATA[SER ]]></print><print TIME="1454983628"><![CDATA[ARG ]]></print><print TIME="1454983628"><![CDATA[ALA ]]></print><print TIME="1454983628"><![CDATA[PHE ]]></print><print TIME="1454983628"><![CDATA[GLU ]]></print><print TIME="1454983628"><![CDATA[MET ]]></print><print TIME="1454983628"><![CDATA[GLY ]]></print><print TIME="1454983628"><![CDATA[PHE ]]></print><print TIME="1454983628"><![CDATA[LYS ]]></print><print TIME="1454983628"><![CDATA[ASN ]]></print><print TIME="1454983628"><![CDATA[LYS ]]></print><print TIME="1454983628"><![CDATA[GLY ]]></print><print TIME="1454983628"><![CDATA[LYS ]]></print><print TIME="1454983628"><![CDATA[ILE ]]></print><print TIME="1454983628"><![CDATA[ILE ]]></print><print TIME="1454983628"><![CDATA[THR ]]></print><print TIME="1454983628"><![CDATA[LEU ]]></print><print TIME="1454983628"><![CDATA[THR ]]></print><print TIME="1454983628"><![CDATA[ARG ]]></print><print TIME="1454983628"><![CDATA[THR ]]></print><print TIME="1454983628"><![CDATA[ALA ]]></print><print TIME="1454983628"><![CDATA[ALA ]]></print><print TIME="1454983628"><![CDATA[ASP ]]></print><print TIME="1454983628"><![CDATA[GLY ]]></print><print TIME="1454983628"><![CDATA[LEU ]]></print><print TIME="1454983628"><![CDATA[TRP ]]></print><print TIME="1454983628"><![CDATA[LYS ]]></print><print TIME="1454983628"><![CDATA[CYS ]]></print><print TIME="1454983628"><![CDATA[THR ]]></print><print TIME="1454983628"><![CDATA[SER ]]></print><print TIME="1454983628"><![CDATA[ASP ]]></print><print TIME="1454983628"><![CDATA[GLN ]]></print><print TIME="1454983628"><![CDATA[ASP ]]></print><print TIME="1454983628"><![CDATA[GLU ]]></print><print TIME="1454983628"><![CDATA[GLN ]]></print><print TIME="1454983628"><![CDATA[PHE ]]></print><print TIME="1454983628"><![CDATA[ILE ]]></print><print TIME="1454983628"><![CDATA[PRO ]]></print><print TIME="1454983628"><![CDATA[LYS ]]></print><print TIME="1454983628"><![CDATA[GLY ]]></print><print TIME="1454983628"><![CDATA[CYS ]]></print><print TIME="1454983628"><![CDATA[SER ]]></print><print TIME="1454983628"><![CDATA[ARG ]]></print><print TIME="1454983628"><![CDATA[
+]]></print><print TIME="1454983628"><![CDATA[	renamed 2 CYS residues to CYH (no SSBOND records found)
+]]></print><print TIME="1454983628"><![CDATA[	created 50 peptide bonds
+]]></print><print TIME="1454983628"><![CDATA[	created 0 disulphide bonds
+]]></print><print TIME="1454983628"><![CDATA[	name                	chainID	length
+]]></print><print TIME="1454983628"><![CDATA[	ID3                 	A	51
+]]></print></pdb2mmpl>
+
+	
+	<mmpl2xml output_filename="ID3.xml" template_header_filename="/home1/02596/chengc2/ilmm/lib/protein_assembler/template.xml.header" template_footer_filename="/home1/02596/chengc2/ilmm/lib/protein_assembler/template.xml.footer" author="dacb" version="2009.0" date="2009-01-22"/>
+	<mmpl2xml output_filename="ID3.windows.xml" template_header_filename="/home1/02596/chengc2/ilmm/lib/protein_assembler/template.windows.xml.header" template_footer_filename="/home1/02596/chengc2/ilmm/lib/protein_assembler/template.xml.footer" author="dacb" version="2009.0" date="2009-01-22"/>
+
+	
+	<add count="1" molecule="ID3" author="dacb" version="2009.0" date="2009-01-22">
+		<chain id="A"/>
+	<print TIME="1454983628"><![CDATA[	adding 1 ID3  to system using supplied chain assignments...
+]]></print></add>
+
+	
+	<pdb_read filename="ID3.pdb" author="dacb" version="2009.0" date="2009-01-22"><file filename="ID3.pdb" mode="r" size="31520"/><print TIME="1454983628"><![CDATA[	mapped 394 atoms
+]]></print><variable name="cutoff_range" type="double" value="10"/><print TIME="1454983628"><![CDATA[	box dimensions set to ( 51.606000 , 32.956000 , 34.123000 )
+]]></print><print TIME="1454983628"><![CDATA[	system density is 0.161302
+]]></print><print TIME="1454983628"><![CDATA[	calculating global & local coordinates...
+]]></print></pdb_read>
+
+	
+	<pdb_write filename="ID3_preH.pdb" author="dacb" version="2009.0" date="2009-01-22" write_solvent="false"><file filename="ID3_preH.pdb" mode="w" size="25735"/><print TIME="1454983628"><![CDATA[	writing PDB file 'ID3_preH.pdb'
+]]></print><print TIME="1454983628"><![CDATA[	solvent atoms will NOT be written to PDB
+]]></print><print TIME="1454983628"><![CDATA[	calculating global & local coordinates...
+]]></print><print TIME="1454983638"><![CDATA[	calculating global & local coordinates...
+]]></print></pdb_write>
+<halt><print TIME="1454983639"><![CDATA[kernel is collecting threads...]]></print><print TIME="1454983639"><![CDATA[done
+]]></print><print TIME="1454983639"><![CDATA[in lucem Molecular Mechanics kernel performing clean shutdown...
+]]></print></halt></workbook>

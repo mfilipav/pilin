@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<!-- ilmm input to auto-generate parameter library molecule from a PDB, read the PDB into ilmm and write out a PDB -->
+<workbook xmlns="http://inlucemmolecularmechanics/workbook" mmpl_uri="file:///home1/02596/chengc2/ilmm/lib/sample_parmlib.xml">
+	<!-- make a molecule from a PDB by specifying the PDB filename, source chain ID and target molecule name -->
+	<pdb2mmpl pdb_filename="ID3.pdb" pdb_chain="A" destination_molecule="ID3"/>
+
+	<!-- write out a parameter libraries for future use, use the template header and footer -->
+	<mmpl2xml output_filename="ID3.xml" template_header_filename="/home1/02596/chengc2/ilmm/lib/protein_assembler/template.xml.header" template_footer_filename="/home1/02596/chengc2/ilmm/lib/protein_assembler/template.xml.footer"/>
+	<mmpl2xml output_filename="ID3.windows.xml" template_header_filename="/home1/02596/chengc2/ilmm/lib/protein_assembler/template.windows.xml.header" template_footer_filename="/home1/02596/chengc2/ilmm/lib/protein_assembler/template.xml.footer"/>
+
+	<!-- add 1 copy and use a default assigned chain ID, 'A' -->
+	<add count="1" molecule="ID3">
+		<chain id="A"/>
+	</add>
+
+	<!-- read the original PDB -->
+	<pdb_read filename="ID3.pdb"/>
+
+	<!-- write out a PDB before adding hydrogens -->
+	<pdb_write filename="ID3_preH.pdb"/>
+</workbook>

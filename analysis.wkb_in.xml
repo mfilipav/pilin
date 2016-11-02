@@ -1,0 +1,26 @@
+<?xml version='1.0'?>
+<workbook xmlns="http://inlucemmolecularmechanics/workbook" mmpl_uri="file://ID3.xml">
+
+	<set name="datatable_type" value="text" type="string"/>
+	<add count="1" molecule="ID3">
+		<chain id="A"/>
+	</add>
+
+	<go steps="2999500">
+		<mdc_reader_skip granularity="10" granularity_in_ps="true">
+			<mdc filename='md0.mdc'/>
+			<mdc filename='md1.mdc'/>
+			<mdc filename='md2.mdc'/>
+			<mdc filename='md3.mdc'/>
+			<mdc filename='md4.mdc'/>
+			<mdc filename='md5.mdc'/>
+		</mdc_reader_skip>
+		<monitor_steps/>
+		<pdb_writer granularity_ps="100" write_solvent="false" directory="filet"/>
+		<dssp bridges="true"/>
+		<vcont reference_pdb="min.pdb" gen_maps="1"/>
+		<sasa/>
+		<rmsd select="ID3@CA" reference_pdb_filename="min.pdb"/>
+		<log granularity="1000"/>
+	</go>
+</workbook>

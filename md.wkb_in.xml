@@ -1,0 +1,34 @@
+<?xml version='1.0'?>
+<!-- ilmm input run a molecular dynamics simulation of a hydrated protein while saving out structures at 1 ps and checkpoint restart files every 100 ps -->
+<workbook xmlns="http://inlucemmolecularmechanics/workbook" mmpl_uri="file://ID3.xml">
+
+	<!-- Uncomment for an 8.0 Angstrom cutoff range -->
+	<!-- The default is 10.0 A, ascale 0.92 -->
+	<!--set name="cutoff_range" type="double" value="8.0"/-->
+	<!--set name="ascale" type="double" value="0.84"/-->
+
+	<!-- Uncomment to change the number of steps to reuse the non-bonded interaction pair lists -->
+	<!-- The default value is 2, other common options are 1, 3, or 5 -->
+	<!--set name="h3d_sync" type="integer" value="1"/-->
+
+	<add count="1" molecule="ID3">
+		<chain id="A"/>
+	</add>
+	<add count="3537" molecule="WAT"/>
+
+	<!-- read in the system -->
+	<mdr_read filename="checkpoint.mdr"/>
+
+	<!-- dynamics of the system -->
+	<go steps="3000000" hours="96">
+		<dynamics/>
+		<thermostat temperature="310" heating_degrees="0.1000" random_seed="1"/>
+		<log granularity="500"/>
+		<mdc_writer_multi_file steps_per_file="500000" granularity="500" error_maximum="0.0005"/>
+		<mdr_writer granularity="500000" checkpoint_granularity="50000" checkpoint_filename="checkpoint.mdr"/>
+	</go>
+
+	<!-- save out a restart file  -->
+	<mdr_write filename="checkpoint.mdr"/>
+
+</workbook>

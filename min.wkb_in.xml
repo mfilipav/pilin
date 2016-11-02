@@ -1,0 +1,48 @@
+<?xml version='1.0'?>
+<!-- ilmm input to read a PDB into ilmm, add hydrogens, minimize the hydrogens and then all atoms and then writing out a PDB -->
+<workbook xmlns="http://inlucemmolecularmechanics/workbook" mmpl_uri="file://ID3.xml">
+	<!-- Uncomment for an 8.0 Angstrom cutoff range -->
+	<!-- The default is 10.0 A, ascale 0.92 -->
+	<!--set name="cutoff_range" type="double" value="8.0"/-->
+	<!--set name="ascale" type="double" value="0.84"/-->
+
+	<!-- Uncomment to change the number of steps to reuse the non-bonded interaction pair lists -->
+	<!-- The default value is 2, other common options are 1, 3, or 5 -->
+	<!--set name="nonbonded_pairlist_steps" type="integer" value="1"/-->
+
+	<!-- add 1 copy and use chain ID 'A' -->
+	<add count="1" molecule="ID3">
+		<chain id="A"/>
+	</add>
+
+	<!-- read the original PDB -->
+	<pdb_read filename="ID3_preH.pdb"/>
+
+	<!-- add hydrogens -->
+	<hydrogen operation="add" select="ID3"/>
+
+	<!-- minimize the hydrogens -->
+	<go steps="500">
+		<sdmin select="@H="/>
+		<log granularity="100"/>
+	</go>
+
+	<!-- write out a PDB with the hydrogens minimized -->
+	<pdb_write filename="ID3_Hmin.pdb"/>
+
+	<!-- minimize all atoms -->
+	<set name="mechanics" value="bond_pbadi angle_pbadi torsion_pbadi nonbonded_plus_pbadi" type="string"/>
+	<set name="pbadi_count" value="10" type="integer"/>
+	<go steps="1000">
+		<sdmin/>
+		<log granularity="100"/>
+	</go>
+
+	<!-- run the chirality check module -->
+	<chirality/>
+
+	<!-- write out a PDB with minimized structure -->
+	<pdb_write filename="min.pdb"/>
+
+</workbook>
+
